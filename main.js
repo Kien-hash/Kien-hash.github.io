@@ -14,7 +14,7 @@ function playStream(idVideoTag, stream) {
 }
 
 
-const peer = new Peer(};
+const peer = new Peer();
 
 socket.on('list-User',arrUser =>{
     $('#div-chat').show(); 
