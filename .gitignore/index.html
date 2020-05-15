@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKIC WebRTC</title>
+    <script src="jquery.js"></script>
+    <script src="peer.js"></script>
+    <script src="socket.io.js"></script>
+</head>
+
+<body>
+    <div id="div-chat">
+        <p>Online ID:</p>
+        <ul id="ulUser"></ul>
+        <h3 id="my-peer">Your ID: </h3>
+        <h3 id="my-username">Your username: </h3>
+        <video id="localStream" width="300" controls></video>
+        <br/>
+        <video id="remoteStream" width="300" controls></video>
+        <br/>
+        <!-- <audio id="remoteAudio" controls></audio> -->
+    </div>
+    <div id="div-signup">
+        <input type="text" id="txtUsername" placeholder="Enter your username: "/>
+        <button id="btnSignUp">Sign Up</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
