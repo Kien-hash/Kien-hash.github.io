@@ -14,7 +14,9 @@ function playStream(idVideoTag, stream) {
 }
 
 
-const peer = new Peer();
+const peer = new Peer({key:'peerjs', 
+host: 'https://9000-bc9c63a9-b336-4dd1-b7f1-5a3cce7bdf98.ws-us02.gitpod.io', 
+secure : true, port: 443});
 
 socket.on('list-User',arrUser =>{
     $('#div-chat').show(); 
